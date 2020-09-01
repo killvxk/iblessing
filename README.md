@@ -28,13 +28,14 @@
     - [x] objc_msgSend sub functions analysis
     - [x] objc block to objc_msgSend xrefs in args and capture list
     - [x] report format including json, etc.
-    
+    - [ ] Swift class and method parsing
+    - [ ] following branches and calls
+    - [ ] SimProcedures for extern symbols
+
+- [x] Tests 
+- [ ] Android Scanners Suport
 - [ ] Diagnostic logs
-- [ ] Tests
 - [ ] More flexible scanner infrastructure for new scanner plugins
-- [ ] Swift class and method parsing
-- [ ] More scanners and generators
-- [ ] Cross-platform
 
 # Support 
 In case you need support regarding iblessing or anything associated with it, you can:
@@ -50,7 +51,7 @@ In case you need support regarding iblessing or anything associated with it, you
 - 2020.07.21 - First release 
 
 # Get started
-⚠️⚠️⚠️ **Sometimes unicorn will crash on start when doing huge memory mapping, you can try to run it again, if it still can't work, please contact me or create an issue, thanks.**
+⚠️⚠️⚠️ **Binary Scanners require 12GB of virtual memory space to loading a mach-o file, but won't consume so much. So you need to ensure that the physical memory of your working machine is greater than 12GB, or ensure that allocatable virtual memory is greater than 12GB through the swap file mechanism.**
 1. You can download the [pre-released iblessing binary](https://github.com/Soulghost/iblessing/releases) and enjoy it.
 2. run chmod +x for the binary
 3. For more tutorails, please check the [Documentation & Help](https://github.com/Soulghost/iblessing#documentation--help) below.
